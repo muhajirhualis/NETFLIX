@@ -1,0 +1,14 @@
+{
+  "hosting": {
+    "public": "dist",
+    "site": "netflix-clone-muhualis",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "preydeploy": ["npm run biuld"]
+  }
+}
